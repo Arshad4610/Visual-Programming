@@ -1,0 +1,32 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication5
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int yr;
+            Console.WriteLine("Year is=");
+            yr = Convert.ToInt32(Console.ReadLine());
+            if (((yr % 4) == 0 && (yr % 100) != 0) || (yr % 400) == 0)
+            {
+                Console.WriteLine(yr+" is a leap year!");
+            }
+            else
+            {
+                Console.WriteLine(yr+" is not a leap year!");
+            }
+            Console.ReadKey();
+        }
+    }
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+      Year is=
+      1974
+      
+      1974 is not a leap year!
