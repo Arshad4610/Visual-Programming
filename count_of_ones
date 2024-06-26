@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a,c=0,rem;
+            Console.WriteLine("Enter a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            while (a != 0)
+            {
+                rem = a % 10;
+                if (rem == 1)
+                {
+                    c++;
+                }
+                a /= 10;
+            }
+            Console.WriteLine("Count of ones in a="+c);
+            Console.ReadKey();
+        }
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Output:
+        Enter a=
+        13241111
+        
+        Count of ones in a=5
